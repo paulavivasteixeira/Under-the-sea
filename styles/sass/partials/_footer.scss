@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+footer {
+    max-width:1440px;
+    margin:0 auto;
+    background-color:$terciaryColor;
+    color:$primaryColor;
+    text-align:center;
+    .copyright {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+    p {
+        color:$primaryColor;
+        margin-top: 0;
+    }
+    a {
+        color:$primaryColor;
+    }
+}

@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+nav {
+    ul {
+        width:100%;
+        display:flex;
+        justify-content:flex-end;
+    }
+    li {
+        display:flex;
+        margin: 25px 0 0 50px;
+    }
+}
+
+.navBar a {
+    color:$white;
+    &:hover {
+    color: $terciaryColor;
+    transition: 0.5s;
+    cursor: pointer;
+    }
+    &:focus {
+        color: $terciaryColor;
+    }
+}

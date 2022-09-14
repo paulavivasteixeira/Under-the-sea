@@ -1,0 +1,223 @@
+@use "./variables" as *;
+
+main {
+    max-width:1440px;
+    width: 100%;
+    margin:0 auto;
+    p{
+        color: $white;
+    }
+}
+
+// underSea section starts here
+.underSea {
+    background-color: $primaryColor;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.seaWrapper {
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    justify-content:space-between; 
+    margin-top:200px;
+    margin-bottom:200px;
+    p {
+        line-height:1.8rem;
+        padding-bottom: 20px;
+    }
+}
+
+// about section starts here
+.about {
+    background-color:$secondaryColor;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 2rem;
+    img {
+        max-width:610px;
+        width:100%;
+        max-height:375px;
+        height:100%;
+    }
+}
+
+.aboutContainer1 {
+    width: 50%;
+    height: 100%;
+    max-height:400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+    
+    .aboutContainer2, .aboutContainer3 {
+        width: 50%;
+        max-height:400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .aboutContainer4 {
+        width: 50%;
+        height: 100%;
+        max-height:400px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
+    .aboutBox1, .aboutBox2 {
+        width:70%;
+        height: 100%;
+        max-height:200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .aboutBox1 {
+        align-items: flex-start;
+    }    
+    
+    .aboutBox2 {
+        align-items: flex-end;
+        p {
+            text-align: end;
+        }
+    }
+    
+    .aboutImg1 {
+        margin-top: -35px;
+        img {
+            box-shadow: 30px 35px #86E0F9;
+            position: relative;
+            z-index:3;
+        }
+    }
+
+.aboutImg2 {
+    bottom:-80px;
+    margin-right: 0;
+    position: relative;
+    img{
+        box-shadow: -30px 35px #86E0F9;
+        z-index:3;
+    }
+}
+
+// icons section starts here
+.icons {
+    background-color: $primaryColor;  
+    height:600px;
+    display: flex;
+}
+
+ul {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    display:flex;
+    width:50%;
+    gap:1rem;
+
+}
+
+.iconsStyles1, .iconsStyles2, .iconsStyles3, .iconsStyles4 {
+    width:100%;
+    max-width:50px;
+    height:50px;
+    background-color:$terciaryColor;
+    color:$primaryColor;
+    border-radius: 50%;
+    display:flex;
+}
+
+.fa-location-arrow, .fa-users, .fa-file, .fa-phone-flip {
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.icon1Content1, .icon1Content2, .icon1Content3, .icon1Content4 {
+    width:200px;
+}
+
+// banner section starts here
+.banner {
+    width: 100%;
+    max-height: 400px;
+    margin: 0 auto;
+    img {
+        width:100%;
+        height:100%;
+    }
+}
+
+// profile section starts here
+
+.profile {
+    background-color: $primaryColor;
+    max-width: 1440px; 
+    .profileContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem 6rem;
+        align-items: center;
+    }
+}
+
+.shoalImg {
+    img {
+        box-shadow: 35px 35px #86E0F9;
+    }
+}
+
+.profileContent {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    p {
+        padding-bottom: 1rem;
+    }
+}
+
+// gallery section starts here
+.gallery {
+    background-color: $secondaryColor;
+    display: flex;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    li {
+        width: calc(100%/3 - 20px);
+        img {
+            width:100%;
+            height: 100%;
+        } 
+    }
+}

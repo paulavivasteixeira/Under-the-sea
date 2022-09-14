@@ -1,0 +1,17 @@
+@use "./variables" as *;
+
+.backgroundContact {
+    max-width: 1440px;
+    width:100%;
+    height: auto;
+    background-image:url("../under-the-sea-assets/contact-header.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+.formContainer {
+    background-color:$secondaryColor;
+    box-shadow: 30px -35px #86E0F9;
+}
+

@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+header {
+    max-width:1440px;
+    margin:0 auto;
+    background-color: $primaryColor;
+    h1 {
+        margin-left: 20%;
+    }
+}
+
+.background {
+    max-width: 1440px;
+    width:100%;
+    height: auto;
+    max-height: 655px;
+    background-image:url("../under-the-sea-assets/1-header-image.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.layer {
+    width:100%;
+    max-width: 1440px;
+    min-height: 100%;
+    background: rgb(12,20,35);
+    background: linear-gradient(4deg, rgba(12,20,35,0.2132820012019231) 25%, rgba(12,20,35,0.7763589242788461) 72%); 
+    z-index:2;
+}
+
+.bannerContent {
+    display:flex;
+    margin-top: 5rem;
+    width:100%;
+}
+
+.goldenFish {
+    max-width: 850px;
+    width:100%;
+    img {
+        width: 100%;
+    }
+}
+
+
+
+

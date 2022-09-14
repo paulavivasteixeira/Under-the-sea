@@ -1,0 +1,134 @@
+@use "./variables" as *;
+
+@media (max-width: 1000px) {
+    /* removing white space at the top of the page */
+    // html {
+    //     margin-top: -100px;
+    // }
+
+    header {
+        .background {
+            min-height: 520px;
+            position: relative;
+        }
+    }
+
+    .bannerContent {
+        flex-direction: column;
+    }
+
+    .layer {
+        height:50%;
+    }
+
+    // underSea section starts here
+    .underSea {
+        height: 60vh;
+    }
+    .seaWrapper {
+        width:80%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        height: 40vh;
+        justify-content:space-between; 
+    }
+
+    .title {
+        position: absolute;
+        width:50%;
+        left:0;
+        top:20%;
+    }
+
+    .goldenFish {
+        position: absolute;
+        width:45%;
+        right:0;
+        bottom:-60px;
+    }
+
+    .about {
+        // flex-direction: column;
+        justify-content: center;
+        max-height:auto;
+    }
+
+    .aboutContainer1, .aboutContainer2, .aboutContainer3, .aboutContainer4 {
+        width:50%;
+    }
+ 
+    .aboutBox1, .aboutBox2 {
+        width: 80%;
+        max-height: 400px;
+    }
+  
+
+    .icons {
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+    }
+
+    .icon1, .icon2, .icon3, .icon4 {
+        display: flex;
+        width:100%;
+    }
+
+    .profileContainer {
+        height:85%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap:1rem;
+    }
+
+    .shoalImg {
+        width:25%;
+    }
+
+    .profileContent {
+        width:70%;
+    }
+
+    .banner {
+        max-height: 250px;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+
+// .about {
+//     flex-direction: column;
+//     justify-content: center;
+//     max-height:auto;
+// }
+
+// .aboutContainer1, .aboutContainer2, .aboutContainer3, .aboutContainer4 {
+//     width:100%;
+// }
+
+// .aboutBox1, .aboutBox2 {
+//     width: 80%;
+//     max-height: 400px;
+// }
+
+
+
+
+}
+
+@media (max-width: 400px) {
+
+
+
+.gallery ul {
+    flex-direction: column;
+    gap:1rem;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+}

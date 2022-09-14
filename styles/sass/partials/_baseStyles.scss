@@ -1,0 +1,59 @@
+@use "variables" as *;
+
+.wrapper {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttonBlue {
+    background-color:$terciaryColor;
+    color:$primaryColor;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    max-width: 250px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    &:hover {
+        background-color: #4bd0f4;
+    }
+    &:focus {
+        background-color: #4bd0f4;
+    }
+    a{
+        text-decoration: none;
+        color:$primaryColor;
+    }
+}
+
+.buttonRead {
+    background-color: $primaryColor;
+    color: $white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border: none;
+    max-width: 250px;
+    cursor: pointer;
+    a {
+        color: $white;
+        transition: 0.3s;
+    }
+    &:hover {
+        transform: scale(0.95);
+    }
+    &:focus {
+        transform: scale(0.95);
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto
+}
