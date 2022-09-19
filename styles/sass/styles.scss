@@ -6,5 +6,7 @@
 @use "partials/header";
 @use "partials/main";
 @use "partials/footer";
-@use "partials/mediaQueries";
+@use "partials/homeMediaQueries";
 @use "partials/contact";
+@use "partials/blog";
+@use "partials/contactMediaQueries"

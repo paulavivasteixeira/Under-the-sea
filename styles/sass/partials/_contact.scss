@@ -1,17 +1,130 @@
 @use "./variables" as *;
 
+// header section starts here
+
 .backgroundContact {
-    max-width: 1440px;
-    width:100%;
-    height: auto;
+    width: 100%;
+    height: 55vh;
+    margin: 0 auto;
     background-image:url("../under-the-sea-assets/contact-header.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     position: relative;
+    background-color: $primaryColor;
+}
+
+// forms styles
+.formBox {
+    position: absolute;
+    top: 15vh;
+    right:10vw;
 }
 
 .formContainer {
     background-color:$secondaryColor;
-    box-shadow: 30px -35px #86E0F9;
+    box-shadow: -30px 35px #86E0F9;
+    width: 60vw;
+    max-width: 900px;
+    height: 55vh;
+    margin: -50px auto 0 auto;
+    padding: 50px 50px;
 }
+
+input[type=text],
+input[type=email] {
+    width: 48%;
+    background: transparent;
+    color: $white;
+    border:none;
+    border-bottom: 2px solid $terciaryColor;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-family: $bodyFont;
+    padding: 0 0 0.8rem 0.8rem;
+    font-size: 1rem;
+}
+
+input[type=text] {
+    margin-right: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: $white;
+}
+
+textarea {
+    background: transparent;
+    color: $white;
+    border: 2px solid $terciaryColor;
+    width:100%;
+    height: 25vh;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: $bodyFont;
+}
+
+[type=submit] {
+    background: $primaryColor;
+    width: 100%;
+    color: $white;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 5vh;
+    padding: 5px;
+    font-family: $bodyFont;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #000714;
+  cursor: pointer;
+}
+
+// main section starts here
+.mainContact {
+    width: 100%;
+    background-color: $primaryColor;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.infoBox {
+    width: 28%;
+    padding: 4rem 0 0 8%;
+}
+
+.medias {
+    ul {
+        display:flex;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding: 0 20px 0 0;
+    }
+    a:hover,
+    a:focus {
+      outline: none;
+      color: $terciaryColor;
+      cursor: pointer;
+    }
+}
+
+.infoContact {
+    left: 5vh;
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+
+}
+
 

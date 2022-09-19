@@ -1,13 +1,9 @@
 @use "variables" as *;
 
 .wrapper {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 80%;
     margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
 }
 
 .buttonBlue {
@@ -26,7 +22,7 @@ a {
     &:focus {
         background-color: #4bd0f4;
     }
-    a{
+    a {
         text-decoration: none;
         color:$primaryColor;
     }
@@ -42,13 +38,12 @@ a {
     cursor: pointer;
     a {
         color: $white;
-        transition: 0.3s;
     }
     &:hover {
-        transform: scale(0.95);
+        background-color: #000714;
     }
     &:focus {
-        transform: scale(0.95);
+        background-color: #000714;
     }
 }
 

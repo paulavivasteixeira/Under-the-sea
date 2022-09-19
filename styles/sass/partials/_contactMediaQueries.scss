@@ -1,0 +1,81 @@
+@use "./variables" as *;
+
+@media (max-width: 1000px) {
+    .mainContact {
+        display: flex;
+    }
+    
+    .infoBox {
+        margin-top: 50vh;
+        width:85vw;
+        margin-bottom: 3%;
+        padding: 4rem 0 0 20%;
+    }
+    
+    .formBox {
+        width: 100%;
+        right: 0;
+        h2 {
+            text-align: start;
+            margin-left: 20%;
+        }
+    }
+
+    .formContainer {
+        background-color:$secondaryColor;
+        box-shadow: -20px 20px #86E0F9;
+        width: 60vw;
+    }
+
+
+    input[type=text],
+    input[type=email] {
+        width: 100%;
+    }
+
+    .formContainer {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .formContainer {
+        padding: 25px 25px;
+    }
+
+    .formBox{
+        h2 {
+        text-align: start;
+        margin-left: 15%;
+        padding-bottom: 5%;
+        }
+    }
+
+    .infoBox {
+        margin-top: 45vh;
+        padding: 4rem 0 0 15%;
+    }
+}
+
+@media (max-width: 550px) {
+
+
+    .formContainer {
+        background-color:$secondaryColor;
+        box-shadow: -5px 9px #86E0F9;
+        width: 80vw;
+        padding: 20px 20px;
+    }
+
+    .infoBox {
+        padding: 4rem 0 0 10%;
+    }
+
+    .formBox{
+        h2 {
+        text-align: start;
+        margin-left: 10%;
+        }
+    }
+
+}
