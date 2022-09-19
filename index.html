@@ -8,38 +8,39 @@
     <script src="https://kit.fontawesome.com/279611ab89.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
-    <header id="home">
-        <div class="background">
-            <div class="layer">
-                <nav class="navBar wrapper">
-                    <ul>
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#blog">Blog</a>
-                        </li>
-                        <li><a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
 
-                <div class="bannerContent">
-                    <div class="title wrapper">
-                        <h1>under</h1>
-                        <h1>the</h1>
-                        <h1>sea</h1>
-                    </div>
-                    <div class="goldenFish">
-                            <img src="./under-the-sea-assets/2-home-box-header.png" alt="three golden fishes swimming on the sea">
-                    </div>
+<body>
+
+    <header class="headerHome" id="home">
+        <div class="layer">
+            <nav class="navBar wrapper">
+
+                <input class="btnMobile" type="checkbox" id="btnMobile">
+                 <label class="hamIcon" for="btnMobile">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="menuList">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="bannerContent">
+                <div class="title wrapper">
+                    <h1>
+                        <span>under</span>
+                        <span>the</span>
+                        <span>sea</span>
+                    </h1>
+                </div>
+                <div class="goldenFish">
+                        <img src="./under-the-sea-assets/2-home-box-header.png" alt="three golden fishes swimming on the sea">
                 </div>
             </div>
-        </div>
+        </div>    
     </header>
 
     <main>
@@ -52,29 +53,33 @@
         </section>
 
         <section class="about" id="about">
-            <div class="aboutContainer1">
-                <div class="aboutImg1">
-                    <img src="./under-the-sea-assets/3-left-image.jpg" alt="a person watching stripped red and white fishes swimming">
-                </div>
-            </div>            
-            <div class="aboutContainer2">
-                <div class="aboutBox1">
-                    <h4>New additions</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repudiandae iure soluta maiores eaque tempora quo? Totam, in natus ipsa earum quis doloribus, quisquam minima rem, quae doloremque voluptates at accusamus</p>
-                    <button class="buttonRead"><a href="#">Read More</a></button>
-                </div>
-            </div>
-            <div class="aboutContainer3">
-                <div class="aboutBox2">
-                    <h4>Meet real nemo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repudiandae iure soluta maiores eaque tempora quo? Totam, in natus ipsa earum quis doloribus, quisquam minima rem, quae doloremque voluptates at accusamus</p>
-                    <button class="buttonRead"><a href="#">Read More</a></button>
+            <div class="about1">
+                <div class="aboutContainer1">
+                    <div class="aboutImg1">
+                        <img src="./under-the-sea-assets/3-left-image.jpg" alt="a person watching stripped red and white fishes swimming">
+                    </div>
+                </div>            
+                <div class="aboutContainer2">
+                    <div class="aboutBox1">
+                        <h4>New additions</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repudiandae iure soluta maiores eaque tempora quo? Totam, in natus ipsa earum quis doloribus, quisquam minima rem, quae doloremque voluptates.</p>
+                        <button class="buttonRead"><a href="#">Read More</a></button>
+                    </div>
                 </div>
             </div>
-            <div class="aboutContainer4">   
-                <div class="aboutImg2">
-                    <img src="./under-the-sea-assets/4-right-image.jpg" alt="a nemo fish swimming">
+            <div class="about2">
+                <div class="aboutContainer3">
+                    <div class="aboutBox2">
+                        <h4>Meet real nemo</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repudiandae iure soluta maiores eaque tempora quo? Totam, in natus ipsa earum quis doloribus, quisquam minima rem, quae doloremque voluptates.</p>
+                        <button class="buttonRead"><a href="#">Read More</a></button>
+                    </div>
                 </div>
+                <div class="aboutContainer4">   
+                    <div class="aboutImg2">
+                        <img src="./under-the-sea-assets/4-right-image.jpg" alt="a nemo fish swimming">
+                    </div>
+                 </div>
             </div>
         </section>
 
@@ -85,7 +90,7 @@
                         <i class="fa-solid fa-location-arrow"></i>
                     </div>
                     <div class="icon1Content">
-                        <h4>Locations</h4>
+                        <a href="./contact.html"> <h4>Locations</h4></a>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ipsa, impedit a cum soluta perferendis molestiae assumenda sequi quibusdam id!</p>
                     </div>
                 </li>
@@ -103,7 +108,7 @@
                         <i class="fa-solid fa-file"></i>
                     </div>
                     <div class="icon3Content">
-                        <h4>Blog</h4>
+                        <a href="./blog.html"><h4>Blog</h4></a>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ipsa, impedit a cum soluta perferendis molestiae assumenda sequi quibusdam id!</p>
                     </div>
                 </li>
@@ -112,7 +117,7 @@
                         <i class="fa-solid fa-phone-flip"></i>
                     </div>
                     <div>
-                        <h4>Get in Touch</h4>
+                        <a href="./contact.html"><h4>Get in Touch</h4></a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ipsa, impedit a cum soluta perferendis molestiae assumenda sequi quibusdam id!</p>
                     </div>
                 </li>
@@ -157,7 +162,6 @@
     <footer class="copyright"> 
         <p>Copyright &copy 2022 <a href="http://junocollege.com/" target="_blank">Juno College of Technology</a></p>
     </footer>
-
 
 </body>
 </html>

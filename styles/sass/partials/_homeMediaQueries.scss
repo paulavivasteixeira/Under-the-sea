@@ -1,0 +1,257 @@
+@use "./variables" as *;
+
+@media (min-width: 1700px) {
+    .wrapper {
+        max-width: 1440px;
+    }
+
+    .about1 {
+        margin-bottom: 5%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    
+    .goldenFish {
+        bottom: 2vh;
+    }
+    
+    .about1,
+    .about2 {
+        height: 40vh;
+    }
+
+    .aboutContainer2, .aboutContainer3 {
+        width: 55vw;
+        height: 50vh;
+        padding-bottom: 2rem;
+        h4 {
+            margin: -2rem 0 1rem 0;
+        }
+        p {
+            margin-bottom: -1rem;
+        }
+    }
+
+    .aboutBox1, .aboutBox2 {
+        width: 50vw;
+        height: 40vh;
+    }
+    
+    .aboutBox1 {
+        padding-left: 5%;
+    }    
+    
+    .aboutBox2 {
+        padding-right: 5%;
+    }
+
+    .aboutImg1 {
+        img {
+            box-shadow: 15px 12.5px #86E0F9;
+            width: 45vw;
+        }
+    }
+    
+    .aboutImg2 {
+        img{
+            box-shadow: -15px 17px #86E0F9;
+            width: 45vw;
+        }
+    }
+
+    .icon1, .icon2, .icon3, .icon4 {
+        width:100%;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .bannerContent {
+        flex-direction: column;
+    }
+
+    .buttonBlue {
+        width:100%;
+        max-width: 250px;
+    }
+    
+    .buttonRead {
+        width:100%;
+        max-width: 200px;
+    }
+    
+    .goldenFish {
+        bottom: 50px;
+        img {
+            width: 55vw;
+        }
+    }
+
+    .underSea {
+        h3 {
+            text-align: center;
+        }
+    }
+    
+    .seaWrapper {
+        margin-top:10vh;
+        margin-bottom:10vh;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about1,
+    .about2 {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutBox1, .aboutBox2 {
+        width: 90vw;
+        height: 45vh;
+    }
+    
+    .aboutBox1 {
+        align-items: flex-end;
+        padding-right: 5%;
+        p {
+            text-align: end;
+        }
+    }
+    
+    .aboutBox2 {
+        align-items: flex-start;
+        padding-left: 5%;
+        p {
+            text-align: start;
+        }
+    }    
+
+    .aboutContainer2, .aboutContainer3 {
+        width: 100vw;
+        p {
+            margin-bottom: -1rem;
+        }
+    }
+
+    .aboutContainer4 {
+        width: 100vw;
+    }
+
+    .aboutImg1 {
+        position: relative;
+        top: -20px;
+        img {
+            box-shadow: 15px 12px #86E0F9;
+            width: 45vw;
+            min-width: 310px;
+        }
+    }
+
+    .aboutImg2 {
+        position: absolute;
+        bottom: -15px;
+        img {
+            width: 45vw;
+            min-width: 310px;
+        }
+    }
+
+    .profileContainer {
+        flex-direction: column;
+        .shoal {
+            width: 50%;
+        }
+        .shoalImg {
+            img {
+                box-shadow: 20px 20px #86E0F9;
+            }
+        }
+        .profileContent {
+            h4 {
+                text-align: center;
+            }
+        }
+        button {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+
+    html {
+        font-size: 100%;
+    }
+    
+    h1 {
+        span {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+        }
+    }
+
+    .headerHome {
+        height: 55vh;
+        position: relative;
+    }
+
+    .title {
+        padding-top: 3%;
+    }
+    .goldenFish {
+        position: absolute;
+        bottom: -3vh;
+        img {
+            width: 65vw;
+        }
+    }
+    .aboutContainer1, .aboutContainer2, .aboutContainer3 .aboutContainer4 {
+        min-height: 150px;
+    }
+
+    .aboutBox1 {
+        padding-top: 10%;
+    }
+
+    .aboutBox2 {
+        padding-bottom: 10%;
+    }
+
+    .iconsStyles1, .iconsStyles2, .iconsStyles3, .iconsStyles4 {
+        width:100%;
+        max-width: 30px;
+        height: 30px;
+    }
+    
+    .fa-location-arrow, .fa-users, .fa-file, .fa-phone-flip {
+        font-size: 0.9rem;
+    }
+
+    .shoal {
+        width: 70%;
+    }
+
+    .shoalImg {
+        img {
+            box-shadow: 5px 5px #86E0F9;
+        }
+    }
+
+    .gallery {
+        ul {
+            flex-direction: column;
+            gap:2rem;
+            margin-top: 2rem auto;
+        }
+        li {
+            width: 80%;
+        }
+    }
+}
