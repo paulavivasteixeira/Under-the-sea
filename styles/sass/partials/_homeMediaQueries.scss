@@ -68,7 +68,7 @@
 
 @media (max-width: 800px) {
     
-    .bannerContent {
+       .bannerContent {
         flex-direction: column;
     }
 
@@ -189,8 +189,17 @@
     html {
         font-size: 100%;
     }
+
+    .navBar {
+        ul {
+            padding: 10px 0 0 0;
+            display: inline-block;
+            text-align: end;
+        }
+    }
     
     h1 {
+        font-size: 4.5rem;
         span {
             font-size: 4.5rem;
             line-height: 4.5rem;
@@ -198,18 +207,22 @@
     }
 
     .headerHome {
-        height: 55vh;
+        height: 60vh;
         position: relative;
     }
 
     .title {
-        padding-top: 3%;
+        padding-top: 1vh;
+        h1 {
+            margin: 0 auto;
+        }
     }
     .goldenFish {
         position: absolute;
-        bottom: -3vh;
+        bottom: -10vh;
         img {
             width: 65vw;
+            min-width: 250px;
         }
     }
     .aboutContainer1, .aboutContainer2, .aboutContainer3 .aboutContainer4 {
@@ -222,6 +235,10 @@
 
     .aboutBox2 {
         padding-bottom: 10%;
+    }
+
+    .icons {
+        padding-top: 10%;
     }
 
     .iconsStyles1, .iconsStyles2, .iconsStyles3, .iconsStyles4 {
@@ -253,5 +270,9 @@
         li {
             width: 80%;
         }
+    }
+
+    .copyright {
+        padding: 0 50px;
     }
 }

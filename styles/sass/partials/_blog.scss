@@ -10,6 +10,7 @@
     background-image: url("../under-the-sea-assets/8-blog-header.jpg");
     background-size: cover;
     background-repeat:no-repeat;
+
     position: relative;
 }
 
@@ -23,6 +24,12 @@
     margin-right: 0;
     position: relative;
     z-index:2;
+    h2 {
+        padding-left: 4%;
+    }
+    h3 {
+        margin-bottom: -15px;
+    }
 }
 
 .coralImg {
@@ -95,9 +102,10 @@ Button.postButton:focus {
 
 // aside starts here
 aside {
-    width: 35%;
+    width: 39vw;
     position:absolute;
-    top: 80vh;
+    top: 60vh;
+    left:-82%;
     p {
         color:$white;
     }
@@ -130,3 +138,41 @@ aside {
         margin-top: 1rem;
     }
 }
+
+
+
+// aside {
+//     width: 35%;
+//     position:absolute;
+//     top: 80vh;
+//     p {
+//         color:$white;
+//     }
+//     img {
+//         width: 100%;
+//         height:fit-content;
+//         box-shadow: 21px 6px 0px -6px $secondaryColor;
+//         margin-bottom: -2rem;
+//     }
+//     li {
+//         list-style: inside;
+//         color: white;
+//         padding-bottom: 10px;
+//         a {
+//             text-decoration: none;
+//             color: $white;
+//         }
+//     }
+    
+//     .blogAbout,
+//     .posts {
+//         width:70%;
+//         margin-left: 30%;
+//         padding: 4%;
+//         background-color: $secondaryColor;
+//         box-shadow: 15px 0px $secondaryColor;
+//     }
+    
+//     .blogAbout {
+//         margin-top: 1rem;
+//     }

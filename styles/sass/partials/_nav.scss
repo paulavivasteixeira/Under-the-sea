@@ -15,7 +15,7 @@ nav {
 
 .navBar a {
     color:$white;
-    padding: 20px 5px 20px 10px;
+    padding: 20px 10px 20px 10px;
     &:hover {
         color: $terciaryColor;
         transition: 0.5s;
@@ -27,62 +27,23 @@ nav {
     }
 }
 
-.btnMobile {
-    display: none;
-}
-
-.hamIcon {
-    position: relative;
-    display: none;   
-}
-
-.fa-bars {
-    // margin: 2rem auto;
-    color: $white;
-    font-size: 2rem;
-}
-
 @media (max-width: 800px) {
-    .navBar ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        overflow: hidden;
-        background-color: #14171f69;
-        max-height: 0;
-        transition: 1s ease-out;
-        z-index: 3;
-    }
-    
-    .navBar li {
-        display: block;
-    }
-    
+         
     .navbar.a {
         display: block;
-        padding: 5px;
+        padding: 10px;
+    }
+   
+    .navBar {
+        ul {
+            padding: 25px 0;
+            justify-content: center;
+        }
+        li {
+            display: block;
+        }
     }
     
-    .btnMobile {
-        display: none;
-    }
-    
-    .hamIcon {
-        position: relative;
-        float: right;
-        padding: 0.2rem 0.5rem;
-        display: block;   
-        font-size: 1.5rem;
-        z-index: 4;
-        cursor: pointer;
-    }
-    
-    .btnMobile:checked ~ .menuList {
-        max-height: 240px;
-        position: absolute;
-        z-index: 3;
-        min-width: 90%;
-    }       
 }
     
 

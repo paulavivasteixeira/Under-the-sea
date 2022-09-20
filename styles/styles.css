@@ -317,6 +317,11 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 800px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 550px) {
   h1 span {
     display: inline-block;
@@ -358,7 +363,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  max-width: 250px;
+  max-width: 215px;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -382,7 +387,7 @@ a {
   padding: 10px 30px;
   text-transform: uppercase;
   border: none;
-  max-width: 250px;
+  max-width: 215px;
   cursor: pointer;
 }
 .buttonRead a {
@@ -420,7 +425,7 @@ nav li {
 
 .navBar a {
   color: white;
-  padding: 20px 5px 20px 10px;
+  padding: 20px 10px 20px 10px;
 }
 .navBar a:hover {
   color: #86E0F9;
@@ -433,56 +438,19 @@ nav li {
   color: #86E0F9;
 }
 
-.btnMobile {
-  display: none;
-}
-
-.hamIcon {
-  position: relative;
-  display: none;
-}
-
-.fa-bars {
-  color: white;
-  font-size: 2rem;
-}
-
 @media (max-width: 800px) {
+  .navbar.a {
+    display: block;
+    padding: 10px;
+  }
   .navBar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: rgba(20, 23, 31, 0.4117647059);
-    max-height: 0;
-    -webkit-transition: 1s ease-out;
-    transition: 1s ease-out;
-    z-index: 3;
+    padding: 25px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navBar li {
     display: block;
-  }
-  .navbar.a {
-    display: block;
-    padding: 5px;
-  }
-  .btnMobile {
-    display: none;
-  }
-  .hamIcon {
-    position: relative;
-    float: right;
-    padding: 0.2rem 0.5rem;
-    display: block;
-    font-size: 1.5rem;
-    z-index: 4;
-    cursor: pointer;
-  }
-  .btnMobile:checked ~ .menuList {
-    max-height: 240px;
-    position: absolute;
-    z-index: 3;
-    min-width: 90%;
   }
 }
 .headerHome {
@@ -517,16 +485,18 @@ nav li {
   right: 0;
 }
 .goldenFish img {
-  width: 55vw;
+  width: 60vw;
+  max-width: 1000px;
 }
 
 .title {
-  padding-top: 8%;
+  padding-top: 4%;
 }
 
 main {
   width: 100%;
   margin: 0 auto;
+  min-width: 320px;
 }
 main p {
   color: white;
@@ -862,12 +832,11 @@ main p {
 }
 
 .copyright {
-  margin: 0;
+  margin: 0 auto;
   background-color: #86E0F9;
   color: #0C1423;
   text-align: center;
   width: 100%;
-  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1057,23 +1026,35 @@ main p {
   html {
     font-size: 100%;
   }
+  .navBar ul {
+    padding: 10px 0 0 0;
+    display: inline-block;
+    text-align: end;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
   h1 span {
     font-size: 4.5rem;
     line-height: 4.5rem;
   }
   .headerHome {
-    height: 55vh;
+    height: 60vh;
     position: relative;
   }
   .title {
-    padding-top: 3%;
+    padding-top: 1vh;
+  }
+  .title h1 {
+    margin: 0 auto;
   }
   .goldenFish {
     position: absolute;
-    bottom: -3vh;
+    bottom: -10vh;
   }
   .goldenFish img {
     width: 65vw;
+    min-width: 250px;
   }
   .aboutContainer1, .aboutContainer2, .aboutContainer3 .aboutContainer4 {
     min-height: 150px;
@@ -1083,6 +1064,9 @@ main p {
   }
   .aboutBox2 {
     padding-bottom: 10%;
+  }
+  .icons {
+    padding-top: 10%;
   }
   .iconsStyles1, .iconsStyles2, .iconsStyles3, .iconsStyles4 {
     width: 100%;
@@ -1109,6 +1093,9 @@ main p {
   }
   .gallery li {
     width: 80%;
+  }
+  .copyright {
+    padding: 0 50px;
   }
 }
 .backgroundContact {
@@ -1220,7 +1207,7 @@ button:focus {
 
 .infoBox {
   width: 28%;
-  padding: 4rem 0 0 8%;
+  padding: 4rem 0 0 7%;
 }
 
 .medias ul {
@@ -1249,6 +1236,74 @@ button:focus {
   font-size: 0.9rem;
 }
 
+@media (max-width: 1000px) {
+  .mainContact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .infoBox {
+    margin-top: 40vh;
+    width: 85vw;
+    margin-bottom: 3%;
+    padding: 3rem 0 0 20%;
+  }
+  .formBox {
+    width: 100%;
+    right: 0;
+  }
+  .formBox h2 {
+    text-align: start;
+    margin-left: 20%;
+  }
+  .formContainer {
+    background-color: #0F614E;
+    -webkit-box-shadow: -20px 20px #86E0F9;
+            box-shadow: -20px 20px #86E0F9;
+    width: 60vw;
+  }
+  input[type=text],
+input[type=email] {
+    width: 100%;
+  }
+  .formContainer {
+    height: 60vh;
+  }
+}
+@media (max-width: 800px) {
+  .formContainer {
+    padding: 25px 25px;
+  }
+  .formBox h2 {
+    text-align: start;
+    margin-left: 17%;
+    padding-bottom: 2%;
+  }
+  .infoBox {
+    margin-top: 40vh;
+    padding: 2rem 0 0 18%;
+  }
+}
+@media (max-width: 550px) {
+  .formContainer {
+    background-color: #0F614E;
+    -webkit-box-shadow: -5px 9px #86E0F9;
+            box-shadow: -5px 9px #86E0F9;
+    width: 80vw;
+    height: 53vh;
+    padding: 20px 20px;
+  }
+  .infoBox {
+    margin-top: 30vh;
+    padding: 0 0 0 11%;
+  }
+  .formBox h2 {
+    text-align: start;
+    margin-left: 10%;
+    padding-bottom: 2rem;
+  }
+}
 .bodyBlog {
   background-color: #0C1423;
 }
@@ -1278,6 +1333,12 @@ button:focus {
   margin-right: 0;
   position: relative;
   z-index: 2;
+}
+.mainBlog h2 {
+  padding-left: 4%;
+}
+.mainBlog h3 {
+  margin-bottom: -15px;
 }
 
 .coralImg {
@@ -1353,9 +1414,10 @@ Button.postButton:focus {
 }
 
 aside {
-  width: 35%;
+  width: 39vw;
   position: absolute;
-  top: 80vh;
+  top: 60vh;
+  left: -82%;
 }
 aside p {
   color: white;
@@ -1391,67 +1453,90 @@ aside .blogAbout {
   margin-top: 1rem;
 }
 
+@media (min-width: 1700px) {
+  .wrapper {
+    max-width: 1440px;
+  }
+  .blogImg {
+    width: 100%;
+    top: 2vh;
+  }
+  aside {
+    width: 30vw;
+  }
+}
 @media (max-width: 1000px) {
-  .mainContact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .coralImg {
+    margin-left: auto;
+    width: 97.1%;
+    padding-bottom: 0.8rem;
   }
-  .infoBox {
-    margin-top: 50vh;
-    width: 85vw;
-    margin-bottom: 3%;
-    padding: 4rem 0 0 20%;
-  }
-  .formBox {
+  .coralImg img {
+    -webkit-box-shadow: -15px 15px #86E0F9;
+            box-shadow: -15px 15px #86E0F9;
     width: 100%;
-    right: 0;
-  }
-  .formBox h2 {
-    text-align: start;
-    margin-left: 20%;
-  }
-  .formContainer {
-    background-color: #0F614E;
-    -webkit-box-shadow: -20px 20px #86E0F9;
-            box-shadow: -20px 20px #86E0F9;
-    width: 60vw;
-  }
-  input[type=text],
-input[type=email] {
-    width: 100%;
-  }
-  .formContainer {
-    height: 60vh;
   }
 }
 @media (max-width: 800px) {
-  .formContainer {
-    padding: 25px 25px;
+  .backgroundBlog {
+    background-position: center center;
   }
-  .formBox h2 {
-    text-align: start;
-    margin-left: 15%;
-    padding-bottom: 5%;
+  .mainBlog {
+    padding-top: 35vh;
+    width: 100%;
+    bottom: 4rem;
   }
-  .infoBox {
-    margin-top: 45vh;
-    padding: 4rem 0 0 15%;
+  .coralImg {
+    margin-left: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .coralImg img {
+    -webkit-box-shadow: -20px 20px #86E0F9;
+            box-shadow: -20px 20px #86E0F9;
+    width: 100%;
+  }
+  .recentPost, .comments, .blogForm {
+    padding-left: 4%;
+    margin-right: 3%;
+  }
+  .blogForm {
+    width: 100%;
+    margin: 0 auto;
+  }
+  aside {
+    width: 97vw;
+    position: relative;
+    top: 0;
+    left: -3.5%;
   }
 }
 @media (max-width: 550px) {
-  .formContainer {
-    background-color: #0F614E;
-    -webkit-box-shadow: -5px 9px #86E0F9;
-            box-shadow: -5px 9px #86E0F9;
-    width: 80vw;
-    padding: 20px 20px;
+  .backgroundBlog {
+    height: 40vh;
   }
-  .infoBox {
-    padding: 4rem 0 0 10%;
+  .recentPost, .comments, .blogForm {
+    margin-right: 1rem;
   }
-  .formBox h2 {
-    text-align: start;
-    margin-left: 10%;
+  .clientContainer1,
+.clientContainer2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blogForm {
+    width: 100%;
+  }
+  .blogForm input[type=text],
+.blogForm input[type=email] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    margin: 0 auto 2rem 0;
   }
 }

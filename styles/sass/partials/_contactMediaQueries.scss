@@ -3,13 +3,14 @@
 @media (max-width: 1000px) {
     .mainContact {
         display: flex;
+        padding-bottom: 50px;
     }
     
     .infoBox {
-        margin-top: 50vh;
+        margin-top: 40vh;
         width:85vw;
         margin-bottom: 3%;
-        padding: 4rem 0 0 20%;
+        padding: 3rem 0 0 20%;
     }
     
     .formBox {
@@ -26,7 +27,6 @@
         box-shadow: -20px 20px #86E0F9;
         width: 60vw;
     }
-
 
     input[type=text],
     input[type=email] {
@@ -46,36 +46,37 @@
     .formBox{
         h2 {
         text-align: start;
-        margin-left: 15%;
-        padding-bottom: 5%;
+        margin-left: 17%;
+        padding-bottom: 2%;
         }
     }
 
     .infoBox {
-        margin-top: 45vh;
-        padding: 4rem 0 0 15%;
+        margin-top: 40vh;
+        padding: 2rem 0 0 18%;
     }
 }
 
 @media (max-width: 550px) {
 
-
     .formContainer {
         background-color:$secondaryColor;
         box-shadow: -5px 9px #86E0F9;
         width: 80vw;
+        height: 53vh;
         padding: 20px 20px;
     }
 
     .infoBox {
-        padding: 4rem 0 0 10%;
+        margin-top: 30vh;
+        padding: 0 0 0 11%;
     }
 
     .formBox{
         h2 {
         text-align: start;
         margin-left: 10%;
+        padding-bottom: 2rem;
         }
     }
-
 }

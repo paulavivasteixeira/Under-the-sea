@@ -90,6 +90,13 @@ a {
     text-decoration: none;
 }
 
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 550px) {
     h1 {
         span {
