@@ -181,7 +181,7 @@ main {
 // profile section starts here
 .profile {
     background-color: $primaryColor;
-    min-height: 60vh;
+    // min-height: 60vh;
     margin: 0 auto;
     display:flex;
 }
@@ -221,7 +221,7 @@ main {
 }
 
 // gallery section starts here
-.gallery {
+    .gallery {
     background-color: $secondaryColor;
     display: flex;
     ul {
@@ -239,4 +239,9 @@ main {
             height: 100%;
         } 
     }
+}
+
+.carrouselNav,
+.carrouselBtn {
+    display:none;
 }

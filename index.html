@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under the Sea - Paula </title>
     <script src="https://kit.fontawesome.com/279611ab89.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -13,13 +14,18 @@
 
     <header class="headerHome" id="home">
         <div class="layer">
+            <div class="hamburgerBtn">
+                <span></span>
+            </div>
+
             <nav class="navBar wrapper">
                 <ul class="menuList">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#home" class="navLink">Home</a></li>
+                    <li><a href="#about" class="navLink">About</a></li>
+                    <li><a href="./blog.html" class="navLink">Blog</a></li>
+                    <li><a href="./contact.html" class="navLink">Contact</a></li>
                 </ul>
+
             </nav>
 
             <div class="bannerContent">
@@ -139,17 +145,33 @@
         </section>
 
         <section class="gallery">
-            <ul class="wrapper">
-                <li>
-                    <img src="./under-the-sea-assets/7a-gallery-image-1.jpg" alt="a girl touching the glass of a giang aquarium">
-                </li>
-                <li>
-                    <img src="./under-the-sea-assets/7b-gallery-image-2.jpg" alt="people taking picture of a grey whale swimming in an aquarium">
-                </li>
-                <li>
-                    <img src="./under-the-sea-assets/7c-gallery-image-3.jpg" alt="fishes swimming in the bottom of a giant aquarium">
-                </li>
-            </ul>
+            <div class="carousel wrapper">
+                <button class="carouselBtn carouselBtnL">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="carouselTrackContainer">
+           
+                    <ul class="carouselTrack">
+                        <li class="carouselSlide">
+                            <img class="carouselImg" src="./under-the-sea-assets/7a-gallery-image-1.jpg" alt="a girl touching the glass of a giang aquarium">
+                        </li>
+                        <li class="carouselSlide">
+                            <img class="carouselImg" src="./under-the-sea-assets/7b-gallery-image-2.jpg" alt="people taking picture of a grey whale swimming in an aquarium">
+                        </li>
+                        <li class="carouselSlide">
+                            <img class="carouselImg" src="./under-the-sea-assets/7c-gallery-image-3.jpg" alt="fishes swimming in the bottom of a giant aquarium">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carouselBtn carouselBtnR">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div class="carouselNav">
+                    <button class="carouselIndicator"></button>
+                    <button class="carouselIndicator"></button>
+                    <button class="carouselIndicator"></button>
+                </div>
+            </div>
         </section>
     </main>
         

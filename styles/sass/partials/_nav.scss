@@ -1,24 +1,25 @@
 @use "variables" as *;
 
-nav {
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     ul {
         width:100%;
-        display:flex;
+        display: flex;
         justify-content:flex-end;
-        margin: 0;
+        gap: 60px;
     }
     li {
         display:flex;
-        margin: 15px 0 0 35px;
     }
 }
 
 .navBar a {
     color:$white;
-    padding: 20px 10px 20px 10px;
+    transition: 0.3s;
     &:hover {
         color: $terciaryColor;
-        transition: 0.5s;
         cursor: pointer;
         text-decoration: none;
     }
@@ -27,22 +28,66 @@ nav {
     }
 }
 
-@media (max-width: 800px) {
-         
-    .navbar.a {
-        display: block;
-        padding: 10px;
+.hamburgerBtn {
+    display: none;
+    cursor: pointer;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    padding: 0.3rem 3rem;
+    background-color: $primaryColor;
+    .menuBar {
+        width: 30px;
+        height: 2px;
+        background-color: $white;
+        margin: 5px;
+        transform: transform 0.3s ease;
     }
-   
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .navBar {
+        justify-content: space-around;
+        transform: translateX(100%);
         ul {
-            padding: 25px 0;
             justify-content: center;
         }
         li {
+            margin: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in;
+        
+        }
+        a {
             display: block;
+            padding: 10px;
         }
     }
+
+    .menuList {
+        position: absolute;
+        width:100vw;
+        top: 3.5vh;
+        right: 0;
+        height: 50vh;
+        background-color: $primaryColor;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navBar.active {
+        transform: translateX(0) ;
+        opacity: 0;
+    }
+    
     
 }
     

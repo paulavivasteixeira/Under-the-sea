@@ -5,8 +5,20 @@
         max-width: 1440px;
     }
 
+    .goldenFish {
+        bottom: 0;
+        img {
+            width: 47vw;
+        }
+    }
+
     .about1 {
         margin-bottom: 5%;
+    }
+
+    .aboutBox1,
+    .aboutBox2 {
+        max-height: 500px;
     }
 }
 
@@ -14,29 +26,44 @@
 @media (max-width: 1000px) {
     
     .goldenFish {
-        bottom: 2vh;
+        bottom: 6vh;
     }
     
+    .underSea {
+        height: 60vh;
+        justify-content: flex-start;
+    }
+
+    .seaWrapper {
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+      }
+
     .about1,
     .about2 {
         height: 40vh;
     }
 
+    .aboutContainer1,
+    .aboutContainer4 {
+        height: 30vh;
+    }
+
     .aboutContainer2, .aboutContainer3 {
         width: 55vw;
-        height: 50vh;
-        padding-bottom: 2rem;
+        height: 30vh;
+        padding-bottom: 1rem;
         h4 {
-            margin: -2rem 0 1rem 0;
+            margin: 2rem 0 3rem 0;
         }
         p {
-            margin-bottom: -1rem;
+            margin-bottom: 1rem;
         }
     }
 
     .aboutBox1, .aboutBox2 {
         width: 50vw;
-        height: 40vh;
+        height: 35vh;
     }
     
     .aboutBox1 {
@@ -51,27 +78,142 @@
         img {
             box-shadow: 15px 12.5px #86E0F9;
             width: 45vw;
+            top: 30px;
         }
     }
     
     .aboutImg2 {
-        img{
+        img {
             box-shadow: -15px 17px #86E0F9;
             width: 45vw;
+            bottom: 61px; 
         }
     }
 
     .icon1, .icon2, .icon3, .icon4 {
         width:100%;
     }
+
+    .profileContainer {
+        flex-direction: column;
+        .shoal {
+            height: 40%;
+        }
+        .shoalImg {
+            img {
+                box-shadow: -10px 10px #86E0F9;
+            }
+        }
+        .profileContent {
+            justify-content: space-around;
+            gap: 0; 
+            h4 {
+                text-align: center;
+            }
+        }
+        button {
+            margin: 0 auto;
+        }
+    }
+    
+    .gallery {
+        background-color: $secondaryColor;
+        height:70vh;
+        ul {
+            flex-direction: column;
+        }
+        li {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .carousel {
+        position:relative;
+        // height:900px;
+        width:80%;
+        margin: 0 auto;
+        top: 5rem;
+    }
+    
+    .carouselImg {
+        width:100%;
+        object-fit: cover;
+    }
+    
+    
+    .carouselTrackContainer {
+        background-color: $secondaryColor;
+        position: relative;
+        height: 70%;
+    }
+    
+    .carouselTrack {
+        background: rgb(168, 97, 97);;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .carouselSlide {
+        position: absolute;
+        top:0;
+        bottom:0;
+        width: 100%;
+    }
+    
+    .carouselBtn {
+        background-color: transparent;
+        display: flex;
+        color: $white;
+        position: absolute;
+        top: 40%;
+        transform: translate(-50%);
+        border:none;
+        i {
+            width: 1.5rem;
+        }
+    }
+    
+    .carouselBtnL {
+        left: -1.5rem;
+        .fa-chevron-left {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .carouselBtnR {
+        right: -3.5rem;
+        .fa-chevron-right {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .carouselNav {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        margin: 0 0.8rem;
+    }
+    
+    .carouselIndicator {
+        border: 0;
+        border-radius: 50%;
+        width: 0.8rem;
+        height: 0.8rem;
+        background: $white;
+        margin: 0.6rem;
+        bottom:0;
+    }
 }
+
 
 @media (max-width: 800px) {
     
-       .bannerContent {
+    .bannerContent {
         flex-direction: column;
     }
-
+    
     .buttonBlue {
         width:100%;
         max-width: 250px;
@@ -88,18 +230,19 @@
             width: 55vw;
         }
     }
-
+    
     .underSea {
+        height: 73vh;
         h3 {
             text-align: center;
         }
     }
     
     .seaWrapper {
-        margin-top:10vh;
+        margin-top:8vh;
         margin-bottom:10vh;
     }
-
+    
     .about {
         display: flex;
         flex-direction: column;
@@ -107,11 +250,11 @@
     
     .about1,
     .about2 {
-        height: 60vh;
+        height: 55vh;
         display: flex;
         flex-direction: column;
     }
-
+    
     .aboutBox1, .aboutBox2 {
         width: 90vw;
         height: 45vh;
@@ -132,18 +275,18 @@
             text-align: start;
         }
     }    
-
+    
     .aboutContainer2, .aboutContainer3 {
         width: 100vw;
         p {
             margin-bottom: -1rem;
         }
     }
-
+    
     .aboutContainer4 {
         width: 100vw;
     }
-
+    
     .aboutImg1 {
         position: relative;
         top: -20px;
@@ -153,7 +296,7 @@
             min-width: 310px;
         }
     }
-
+    
     .aboutImg2 {
         position: absolute;
         bottom: -15px;
@@ -161,28 +304,29 @@
             width: 45vw;
             min-width: 310px;
         }
-    }
-
-    .profileContainer {
-        flex-direction: column;
-        .shoal {
-            width: 50%;
-        }
-        .shoalImg {
-            img {
-                box-shadow: 20px 20px #86E0F9;
-            }
-        }
-        .profileContent {
-            h4 {
-                text-align: center;
-            }
-        }
-        button {
-            margin: 0 auto;
-        }
-    }
+    }  
 }
+
+    // .profileContainer {
+    //     flex-direction: column;
+    //     .shoal {
+    //         width: 50%;
+    //     }
+    //     .shoalImg {
+    //         img {
+    //             box-shadow: -10px 10px #86E0F9;
+    //         }
+    //     }
+    //     .profileContent {
+    //         h4 {
+    //             text-align: center;
+    //         }
+    //     }
+    //     button {
+    //         margin: 0 auto;
+    //     }
+    // }
+
 
 @media (max-width: 550px) {
 
@@ -217,6 +361,7 @@
             margin: 0 auto;
         }
     }
+
     .goldenFish {
         position: absolute;
         bottom: -10vh;
@@ -225,18 +370,54 @@
             min-width: 250px;
         }
     }
-    .aboutContainer1, .aboutContainer2, .aboutContainer3 .aboutContainer4 {
-        min-height: 150px;
+
+    .about1,
+    .about2 {
+        height:auto;
     }
 
-    .aboutBox1 {
-        padding-top: 10%;
+    .aboutContainer1,
+    .aboutContainer2,
+    .aboutContainer3, 
+    .aboutContainer4  {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0;
+        img {
+            width:100%;
+            box-shadow: none;
+            margin-top:0
+        }
+        h4 {
+            margin: 0;
+            text-align: center;
+        }
     }
 
+    .aboutBox1,
     .aboutBox2 {
-        padding-bottom: 10%;
+        padding-top: 0;
+        min-height: 35vh;
+        height:100%;
+        margin: 0;
+        align-items: flex-start;
+        h4 {
+            text-align: start;
+        }
+        p {
+            text-align: left;
+        }
     }
 
+    .aboutImg1,
+    .aboutImg2 {
+        position: relative;
+        margin: 0;
+    }
+           
     .icons {
         padding-top: 10%;
     }
@@ -252,10 +433,7 @@
     }
 
     .shoal {
-        width: 70%;
-    }
-
-    .shoalImg {
+        width: 80%;
         img {
             box-shadow: 5px 5px #86E0F9;
         }

@@ -8,6 +8,7 @@
     background-image:url("../under-the-sea-assets/1-header-image.jpg");
     background-size: cover;
     background-repeat:no-repeat; 
+    background-position: center center;
     
 }
 
@@ -27,7 +28,7 @@
 
 .goldenFish {
     position: absolute;
-    bottom: -1vh;
+    bottom: 2vh;
     right: 0;
     img {
         width: 60vw;
