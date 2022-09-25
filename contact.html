@@ -1,92 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script src="https://kit.fontawesome.com/279611ab89.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/279611ab89.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header id="contact">
-        <div class="backgroundContact">
-            <nav class="navBar wrapper">
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li><a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="backgroundContact">
+        <div class="navContainer">
+          <nav class="navBar wrapper">
+            <ul class="menuList">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./index.html">About</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="navToggler">
+              <span></span>
+            </button>
+          </nav>
         </div>
+      </div>
 
-        <div class="formBox">
-            <h2>Get in touch</h2>
-            <div class="formContainer">
-                
-                <label for="userName" class="sr-only">Name</label>
-                <input type="text" id="userName" name="userName" placeholder="Name">
-    
-                <label for="userEmail" class="sr-only">Email address</label>
-                <input type="email" id="userEmail" name="userEmail" placeholder="Email address">
-        
-                <form action="#" method="#" class="messageForm" name="messageForm">
-                <label for="Usermessage" class="sr-only">Message</label>
-                <textarea name="Usermessage" id="message" placeholder="Message"></textarea>
-                
-                <button type="submit">Submit</button>
-                </form>                    
-            </div>   
-        </div> 
+      <div class="formBox">
+        <h2>Get in touch</h2>
+        <div class="formContainer">
+          <label for="userName" class="sr-only">Name</label>
+          <input type="text" id="userName" name="userName" placeholder="Name" />
+
+          <label for="userEmail" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="userEmail"
+            name="userEmail"
+            placeholder="Email address"
+          />
+
+          <form action="#" method="#" class="messageForm" name="messageForm">
+            <label for="Usermessage" class="sr-only">Message</label>
+            <textarea
+              name="Usermessage"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </header>
 
     <main class="mainContact">
-        <section class="infoBox">
-            <div class="medias">  
-                <ul class="socialMedia">
-                    <li>
-                        <a href="https://www.facebook.com/" aria-label="Go to Under the Sea's Facebook page">
-                            <i aria-hidden="true" class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" aria-label="Go to  Under the Sea's Instagram page">
-                            <i aria-hidden="true" class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/" aria-label="Go to Under the Sea'sTwitter page">
-                            <i aria-hidden="true" class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.whatsapp.com/" aria-label="Senda us a message on Under the Sea's Whatsapp">
-                            <i aria-hidden="true" class="fab fa-whatsapp"></i>
-                        </a>
-                    </li>
-                </ul>   
-            </div>
-            <div class="infoContact">
-                <h5>info@email.com</h5>
-                <p>123-456-7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </div>
-        </section>
+      <section class="infoBox">
+        <div class="medias">
+          <ul class="socialMedia">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Go to Under the Sea's Facebook page"
+              >
+                <i aria-hidden="true" class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Go to  Under the Sea's Instagram page"
+              >
+                <i aria-hidden="true" class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                aria-label="Go to Under the Sea'sTwitter page"
+              >
+                <i aria-hidden="true" class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.whatsapp.com/"
+                aria-label="Senda us a message on Under the Sea's Whatsapp"
+              >
+                <i aria-hidden="true" class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="infoContact">
+          <h5>info@email.com</h5>
+          <p>123-456-7890</p>
+          <p>123 Queen Street West, Unit 10</p>
+          <p>Toronto, Ontario</p>
+          <p>M5V2D5</p>
+        </div>
+      </section>
     </main>
 
-    <footer class="copyright"> 
-        <p>Copyright &copy 2022 <a href="http://junocollege.com/" target="_blank">Juno College of Technology</a></p>
+    <footer class="copyright">
+      <p>
+        Copyright &copy 2022
+        <a href="http://junocollege.com/" target="_blank"
+          >Juno College of Technology</a
+        >
+      </p>
     </footer>
-    
-</body>
+
+    <script src="./app.js"></script>
+  </body>
 </html>

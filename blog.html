@@ -10,21 +10,19 @@
 <body class="bodyBlog">
     <header id="blog">
         <div class="backgroundBlog">
-            <nav class="navBar wrapper">
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="#blog">Blog</a>
-                    </li>
-                    <li><a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="navContainer">
+                <nav class="navBar wrapper">
+                    <ul class="menuList">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <button class="navToggler">
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -121,5 +119,6 @@
         <p>Copyright &copy 2022 <a href="http://junocollege.com/" target="_blank">Juno College of Technology</a></p>
     </footer>
 
+    <script src="./app.js"></script>
 </body>
 </html>
