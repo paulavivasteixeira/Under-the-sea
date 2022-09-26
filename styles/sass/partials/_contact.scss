@@ -3,80 +3,80 @@
 // header section starts here
 
 .backgroundContact {
-    width: 100%;
-    height: 55vh;
-    margin: 0 auto;
-    background-image:url("../under-the-sea-assets/contact-header.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    position: relative;
-    background-color: $primaryColor;
+  width: 100%;
+  height: 55vh;
+  margin: 0 auto;
+  background-image: url("../under-the-sea-assets/contact-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: $primaryColor;
 }
 
 // forms styles
 .formBox {
-    position: absolute;
-    top: 15vh;
-    right:10vw;
+  position: absolute;
+  top: 15vh;
+  right: 10vw;
 }
 
 .formContainer {
-    background-color:$secondaryColor;
-    box-shadow: -30px 35px #86E0F9;
-    width: 60vw;
-    max-width: 900px;
-    height: 55vh;
-    margin: -50px auto 0 auto;
-    padding: 50px 50px;
+  background-color: $secondaryColor;
+  box-shadow: -20px 25px #86e0f9;
+  width: 60vw;
+  max-width: 900px;
+  height: 55vh;
+  margin: -50px auto 0 auto;
+  padding: 50px 50px;
 }
 
-input[type=text],
-input[type=email] {
-    width: 48%;
-    background: transparent;
-    color: $white;
-    border:none;
-    border-bottom: 2px solid $terciaryColor;
-    margin-bottom: 2rem;
-    cursor: pointer;
-    font-family: $bodyFont;
-    padding: 0 0 0.8rem 0.8rem;
-    font-size: 1rem;
+input[type="text"],
+input[type="email"] {
+  width: 48%;
+  background: transparent;
+  color: $white;
+  border: none;
+  border-bottom: 2px solid $terciaryColor;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-family: $bodyFont;
+  padding: 0 0 0.8rem 0.8rem;
+  font-size: 1rem;
 }
 
-input[type=text] {
-    margin-right: 1rem;
+input[type="text"] {
+  margin-right: 1rem;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: $white;
+  color: $white;
 }
 
 textarea {
-    background: transparent;
-    color: $white;
-    border: 2px solid $terciaryColor;
-    width:100%;
-    height: 25vh;
-    padding: 1rem;
-    font-size: 1rem;
-    font-family: $bodyFont;
+  background: transparent;
+  color: $white;
+  border: 2px solid $terciaryColor;
+  width: 100%;
+  height: 25vh;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: $bodyFont;
 }
 
-[type=submit] {
-    background: $primaryColor;
-    width: 100%;
-    color: $white;
-    border: none;
-    margin-top: 2rem;
-    margin-bottom: 5vh;
-    padding: 5px;
-    font-family: $bodyFont;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    line-height: 1.5rem;
+[type="submit"] {
+  background: $primaryColor;
+  width: 100%;
+  color: $white;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 5vh;
+  padding: 5px;
+  font-family: $bodyFont;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
 }
 
 button:hover,
@@ -88,43 +88,110 @@ button:focus {
 
 // main section starts here
 .mainContact {
-    width: 100%;
-    background-color: $primaryColor;
-    margin: 0 auto;
-    padding-bottom: 150px;
+  width: 100%;
+  background-color: $primaryColor;
+  margin: 0 auto;
+  padding-bottom: 150px;
 }
 
 .infoBox {
-    width: 28%;
-    padding: 4rem 0 0 7%;
+  width: 28%;
+  padding: 4rem 0 0 7%;
 }
 
 .medias {
-    ul {
-        display:flex;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-        padding: 0 20px 0 0;
-    }
-    a:hover,
-    a:focus {
-      outline: none;
-      color: $terciaryColor;
-      cursor: pointer;
-    }
+  ul {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0 20px 0 0;
+  }
+  a:hover,
+  a:focus {
+    outline: none;
+    color: $terciaryColor;
+    cursor: pointer;
+  }
 }
 
 .infoContact {
-    left: 5vh;
-    p {
-        margin: 0;
-        font-size: 0.9rem;
-    }
-
-
+  left: 5vh;
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
 }
 
+// modal starts here
 
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: none;
+}
+
+.modalDialog {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modal.fade .modalDialog {
+  transition: transform 0.3s ease-in;
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #0a0a0a;
+  border-radius: 3%;
+  h4 {
+    color: rgb(134, 101, 17);
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  span {
+    color: #5c5a5a;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    pointer-events: auto;
+  }
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid #b8b5b5;
+}
+
+.show {
+  display: block;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.modal.show .modalDialog {
+  -webkit-transform: none;
+  transform: none;
+}

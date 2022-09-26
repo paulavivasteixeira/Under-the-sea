@@ -1,82 +1,104 @@
 @use "./variables" as *;
 
-@media (max-width: 1000px) {
-    .mainContact {
-        display: flex;
-        padding-bottom: 50px;
-    }
-    
-    .infoBox {
-        margin-top: 40vh;
-        width:85vw;
-        margin-bottom: 3%;
-        padding: 3rem 0 0 20%;
-    }
+@media (min-width: 1700px) {
     
     .formBox {
-        width: 100%;
-        right: 0;
-        h2 {
-            text-align: start;
-            margin-left: 20%;
-        }
+        right: 20vw;
     }
+}
 
-    .formContainer {
-        background-color:$secondaryColor;
-        box-shadow: -20px 20px #86E0F9;
-        width: 60vw;
-    }
+@media (max-width: 1000px) {
+  .mainContact {
+    display: flex;
+    padding-bottom: 50px;
+  }
 
-    input[type=text],
-    input[type=email] {
-        width: 100%;
-    }
+  .medias {
+    display: flex;
+    justify-content: center;
+  }
 
-    .formContainer {
-        height: 60vh;
+  .infoBox {
+    margin-top: 40vh;
+    width: 85vw;
+    margin-bottom: 3%;
+    padding: 3rem 0 0 20%;
+  }
+
+  .infoContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formBox {
+    width: 100%;
+    right: 0;
+    h2 {
+      text-align: start;
+      margin-left: 20%;
     }
+  }
+
+  .formContainer {
+    background-color: $secondaryColor;
+    box-shadow: -10px 10px #86e0f9;
+    width: 60vw;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .formContainer {
+    height: 60vh;
+  }
 }
 
 @media (max-width: 800px) {
-    .formContainer {
-        padding: 25px 25px;
-    }
+  .formContainer {
+    padding: 25px 25px;
+  }
 
-    .formBox{
-        h2 {
-        text-align: start;
-        margin-left: 17%;
-        padding-bottom: 2%;
-        }
+  .formBox {
+    h2 {
+      text-align: start;
+      margin-left: 17%;
+      padding-bottom: 2%;
     }
+  }
 
-    .infoBox {
-        margin-top: 40vh;
-        padding: 2rem 0 0 18%;
-    }
+  .infoBox {
+    margin-top: 40vh;
+    padding: 2rem 0 0 18%;
+  }
 }
 
 @media (max-width: 550px) {
+  .formContainer {
+    background-color: $secondaryColor;
+    box-shadow: -5px 9px #86e0f9;
+    width: 80vw;
+    height: 53vh;
+    padding: 20px 20px;
+  }
 
-    .formContainer {
-        background-color:$secondaryColor;
-        box-shadow: -5px 9px #86E0F9;
-        width: 80vw;
-        height: 53vh;
-        padding: 20px 20px;
-    }
+  .infoBox {
+    margin-top: 30vh;
+    padding: 0 0 0 11%;
+  }
 
-    .infoBox {
-        margin-top: 30vh;
-        padding: 0 0 0 11%;
+  .formBox {
+    h2 {
+      text-align: start;
+      margin-left: 10%;
+      padding-bottom: 2rem;
     }
+  }
 
-    .formBox{
-        h2 {
-        text-align: start;
-        margin-left: 10%;
-        padding-bottom: 2rem;
-        }
-    }
+  .navBar ul {
+    padding: 0;
+  }
 }
