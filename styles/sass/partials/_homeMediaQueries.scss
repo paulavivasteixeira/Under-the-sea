@@ -8,6 +8,10 @@
   .about1 {
     margin-bottom: 5%;
   }
+
+  .gallery {
+    height: 75vh;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -66,6 +70,17 @@
   .icon3,
   .icon4 {
     width: 100%;
+  }
+
+  .carouselContainer {
+    width: 90%;
+  }
+
+  .carouselSlide {
+    inset: 0 0 0 21%;
+    img {
+      width: 55%;
+    }
   }
 }
 
@@ -186,6 +201,17 @@
       margin: 0 auto;
     }
   }
+
+  .gallery {
+    height: 38vh;
+  }
+
+  .carouselSlide {
+    inset: 0 0 0 20%;
+    img {
+      width: 60%;
+    }
+  }
 }
 
 @media (max-width: 550px) {
@@ -273,14 +299,29 @@
   }
 
   .gallery {
-    ul {
-      flex-direction: column;
-      gap: 2rem;
-      margin-top: 2rem auto;
-    }
-    li {
+    max-height: 45vh;
+  }
+
+  .carouselContainer {
+    top: 10%;
+  }
+
+  .carouselSlide {
+    inset: 0 0 0 10%;
+    img {
       width: 80%;
     }
+  }
+
+  .carouselBtn {
+    margin-top: 45%;
+  }
+
+  .carouselBtnL {
+    left: 0;
+  }
+  .carouselBtnR {
+    right: 0;
   }
 
   .copyright {
