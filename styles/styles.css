@@ -841,6 +841,8 @@ main p {
 .banner img {
   width: 100%;
   height: 100%;
+  -webkit-transform: scaley(1.04);
+          transform: scaley(1.04);
 }
 
 .profile {
@@ -900,33 +902,69 @@ main p {
 
 .gallery {
   background-color: #0F614E;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.gallery ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.gallery li {
-  width: calc(33.3333333333% - 20px);
-}
-.gallery li img {
   width: 100%;
-  height: 100%;
+  height: 50vh;
+  min-height: 500px;
+}
+
+.carouselContainer {
+  width: 60%;
+  top: 8%;
+  position: relative;
+}
+
+.carouselSlide {
+  position: absolute;
+  width: 100%;
+  inset: 0 0 0 23%;
+  opacity: 0;
+  -webkit-transition: 200ms opacity ease-in-out;
+  transition: 200ms opacity ease-in-out;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+.carouselSlide img {
+  display: block;
+  width: 51%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carouselSlide[data-active] {
+  opacity: 1;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+}
+
+.carouselBtn {
+  background-color: transparent;
+  border: none;
+  height: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  margin-top: 25%;
+  position: absolute;
+}
+.carouselBtn:hover, .carouselBtn:focus {
+  background-color: rgba(230, 227, 227, 0.549);
+}
+
+.carouselBtnL {
+  left: 10%;
+}
+
+.carouselBtnR {
+  right: 12%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  background: transparent;
+  color: white;
+  font-size: 2rem;
 }
 
 .copyright {
@@ -958,6 +996,9 @@ main p {
   }
   .about1 {
     margin-bottom: 5%;
+  }
+  .gallery {
+    height: 75vh;
   }
 }
 @media (max-width: 1000px) {
@@ -1008,6 +1049,15 @@ main p {
 .icon3,
 .icon4 {
     width: 100%;
+  }
+  .carouselContainer {
+    width: 90%;
+  }
+  .carouselSlide {
+    inset: 0 0 0 21%;
+  }
+  .carouselSlide img {
+    width: 55%;
   }
 }
 @media (max-width: 800px) {
@@ -1129,6 +1179,15 @@ main p {
   .profileContainer button {
     margin: 0 auto;
   }
+  .gallery {
+    height: 38vh;
+  }
+  .carouselSlide {
+    inset: 0 0 0 20%;
+  }
+  .carouselSlide img {
+    width: 60%;
+  }
 }
 @media (max-width: 550px) {
   html {
@@ -1199,16 +1258,26 @@ main p {
     -webkit-box-shadow: 5px 5px #86e0f9;
             box-shadow: 5px 5px #86e0f9;
   }
-  .gallery ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 2rem;
-    margin-top: 2rem auto;
+  .gallery {
+    max-height: 45vh;
   }
-  .gallery li {
+  .carouselContainer {
+    top: 10%;
+  }
+  .carouselSlide {
+    inset: 0 0 0 10%;
+  }
+  .carouselSlide img {
     width: 80%;
+  }
+  .carouselBtn {
+    margin-top: 45%;
+  }
+  .carouselBtnL {
+    left: 0;
+  }
+  .carouselBtnR {
+    right: 0;
   }
   .copyright {
     padding: 0 50px;
