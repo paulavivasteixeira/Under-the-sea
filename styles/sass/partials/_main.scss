@@ -1,242 +1,295 @@
 @use "./variables" as *;
 
 main {
-    width: 100%;
-    margin:0 auto;
-    min-width: 320px;
-    p{
-        color: $white;
-    }
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+  p {
+    color: $white;
+  }
 }
 
 // underSea section starts here
 .underSea {
-    background-color: $primaryColor;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .seaWrapper {
-    width:80%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    height:100%;
-    justify-content:space-between; 
-    margin-top:15vh;
-    margin-bottom:15vh;
-    p {
-        padding-bottom: 1rem;
-        max-width:1200px;
-    }
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  p {
+    padding-bottom: 1rem;
+    max-width: 1200px;
+  }
 }
 
 // about section starts here
 .about {
-    background-color:$secondaryColor;
-    position: relative;
-    p {
-        margin-top: -2rem;
-    }
+  background-color: $secondaryColor;
+  position: relative;
+  p {
+    margin-top: -2rem;
+  }
 }
 
 .about1,
 .about2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 45vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 45vh;
 }
 
 .aboutContainer1 {
-    width: 45vw;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+  width: 45vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-    
-.aboutContainer2, .aboutContainer3 {
-    width: 55vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
-    h4 {
-        margin: -3rem 0 -1rem 0;
-    }
-    p {
-        margin-bottom: -1.5rem;
-    }
+
+.aboutContainer2,
+.aboutContainer3 {
+  width: 55vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  h4 {
+    margin: -3rem 0 -1rem 0;
+  }
+  p {
+    margin-bottom: -1.5rem;
+  }
 }
 
 .aboutContainer4 {
-    width: 45vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+  width: 45vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-.aboutBox1, .aboutBox2 {
-    width: 42vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    img {
-        width: 90%;
-        height: 90%;
-    }
+.aboutBox1,
+.aboutBox2 {
+  width: 42vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .aboutBox1 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-left: 10%;
-}    
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 10%;
+}
 
 .aboutImg1 {
-    position: absolute;
-    top: -25px;
-    img {
-        box-shadow: 30px 25px #86E0F9;
-        width: 43vw;
-    }
+  position: absolute;
+  top: -25px;
+  img {
+    box-shadow: 30px 25px #86e0f9;
+    width: 43vw;
+  }
 }
 
 .aboutBox2 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    margin-top: 0.5rem;
-    padding-right: 10%;
-    p {
-        text-align: end;
-    }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  padding-right: 10%;
+  p {
+    text-align: end;
+  }
 }
 
 .aboutImg2 {
-    position: absolute;
-    margin-right: 0;
-    bottom: -30px;
-    img{
-        box-shadow: -30px 35px #86E0F9;
-        width: 43vw;
-    }
+  position: absolute;
+  margin-right: 0;
+  bottom: -30px;
+  img {
+    box-shadow: -30px 35px #86e0f9;
+    width: 43vw;
+  }
 }
 
 // icons section starts here
 .icons {
-    background-color: $primaryColor; 
+  background-color: $primaryColor;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6%;
+  padding-bottom: 3rem;
+  ul {
     display: flex;
-    flex-wrap:wrap;
-    padding-top: 6%;
-    padding-bottom: 3rem;
-    ul {
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        align-content: center;
-    }
-}   
-    
-.icon1, .icon2, .icon3, .icon4 {
-    display:flex;
-    width:50%;
-    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+  }
 }
 
-.iconsStyles1, .iconsStyles2, .iconsStyles3, .iconsStyles4 {
-    width:100%;
-    max-width:50px;
-    height:50px;
-    background-color:$terciaryColor;
-    color:$primaryColor;
-    border-radius: 50%;
-    display:flex;
-    margin-top: 2rem;
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  display: flex;
+  width: 50%;
+  gap: 1rem;
 }
 
-.fa-location-arrow, .fa-users, .fa-file, .fa-phone-flip {
-    border-radius: 50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
+.iconsStyles1,
+.iconsStyles2,
+.iconsStyles3,
+.iconsStyles4 {
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  background-color: $terciaryColor;
+  color: $primaryColor;
+  border-radius: 50%;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.fa-location-arrow,
+.fa-users,
+.fa-file,
+.fa-phone-flip {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 // banner section starts here
 .banner {
+  width: 100%;
+  background-color: $primaryColor;
+  margin: 0 auto;
+  img {
     width: 100%;
-    background-color: $primaryColor;
-    margin: 0 auto;
-    img {
-        width:100%;
-        height:100%;
-        // transform: scaley(1.04);
-    }
+    height: 100%;
+    transform: scaley(1.04);
+  }
 }
 
 // profile section starts here
 .profile {
-    background-color: $primaryColor;
-    min-height: 60vh;
-    margin: 0 auto;
-    display:flex;
+  background-color: $primaryColor;
+  min-height: 60vh;
+  margin: 0 auto;
+  display: flex;
 }
 
 .profileContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem 6rem;
-    align-items: center;
-    min-height: 400px;
-    margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem 6rem;
+  align-items: center;
+  min-height: 400px;
+  margin: 3rem auto;
 }
 
 .shoal {
-    width:30vw;
+  width: 30vw;
 }
 
 .shoalImg {
-    img {
-        box-shadow: 35px 35px #86E0F9;
-        width:100%;
-    }
+  img {
+    box-shadow: 35px 35px #86e0f9;
+    width: 100%;
+  }
 }
 
 .profileContent {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h4 {
-        margin:0;
-    }
-    p {
-        padding-bottom: 1rem;
-    }
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h4 {
+    margin: 0;
+  }
+  p {
+    padding-bottom: 1rem;
+  }
 }
 
-// gallery section starts here
+// gallery starts here
+
 .gallery {
-    background-color: $secondaryColor;
-    display: flex;
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-    li {
-        width: calc(100%/3 - 20px);
-        img {
-            width:100%;
-            height: 100%;
-        } 
-    }
+  background-color: $secondaryColor;
+  width: 100%;
+  height: 50vh;
+  min-height: 500px;
+}
+
+.carouselContainer {
+  width: 60%;
+  top: 8%;
+  position: relative;
+}
+
+.carouselSlide {
+  position: absolute;
+  width: 100%;
+  inset: 0 0 0 23%;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  img {
+    display: block;
+    width: 51%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
+.carouselSlide[data-active] {
+  opacity: 1;
+  transition-delay: 0ms;
+}
+
+.carouselBtn {
+  background-color: transparent;
+  border: none;
+  height: 2rem;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin-top: 25%;
+  position: absolute;
+  &:hover,
+  &:focus {
+    background-color: rgba(230, 227, 227, 0.549);
+  }
+}
+
+.carouselBtnL {
+  left: 10%;
+}
+.carouselBtnR {
+  right: 12%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  background: transparent;
+  color: $white;
+  font-size: 2rem;
 }
