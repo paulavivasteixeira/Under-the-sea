@@ -841,8 +841,8 @@ main p {
 .banner img {
   width: 100%;
   height: 100%;
-  -webkit-transform: scaley(1.04);
-          transform: scaley(1.04);
+  -webkit-transform: scaleY(1.04);
+          transform: scaleY(1.04);
 }
 
 .profile {
@@ -909,6 +909,7 @@ main p {
 
 .carouselContainer {
   width: 60%;
+  max-width: 770px;
   top: 8%;
   position: relative;
 }
@@ -925,7 +926,9 @@ main p {
 }
 .carouselSlide img {
   display: block;
+  max-width: 400px;
   width: 51%;
+  height: 400px;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
@@ -998,7 +1001,17 @@ main p {
     margin-bottom: 5%;
   }
   .gallery {
-    height: 75vh;
+    height: 50vh;
+    max-height: 500px;
+  }
+  .carouselContainer {
+    min-width: 820px;
+  }
+  .carouselSlide {
+    inset: 0 0 0 31%;
+  }
+  .carouselBtn {
+    margin-top: 15%;
   }
 }
 @media (max-width: 1000px) {
@@ -1260,6 +1273,7 @@ main p {
   }
   .gallery {
     max-height: 45vh;
+    min-height: 380px;
   }
   .carouselContainer {
     top: 10%;
@@ -1269,6 +1283,8 @@ main p {
   }
   .carouselSlide img {
     width: 80%;
+    height: 300px;
+    max-width: 300px;
   }
   .carouselBtn {
     margin-top: 45%;

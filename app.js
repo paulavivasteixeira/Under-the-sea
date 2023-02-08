@@ -37,6 +37,7 @@ window.addEventListener("load", (event) => {
   });
 });
 
+
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach((button) => {
