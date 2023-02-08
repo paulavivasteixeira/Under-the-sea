@@ -1830,7 +1830,13 @@ aside .blogAbout {
 }
 @media (max-width: 550px) {
   .backgroundBlog {
-    height: 40vh;
+    height: 65vh;
+  }
+  .navBar ul li {
+    margin: 3px 0 0 3px;
+  }
+  .mainBlog {
+    overflow: hidden;
   }
   .recentPost, .comments, .blogForm {
     margin-right: 1rem;
